@@ -60,7 +60,7 @@ function App() {
             className="absolute inset-0 z-40"
           >
             <DomeGallery />
-            <div className="absolute bottom-10 w-full flex justify-center pointer-events-none">
+            <div className="absolute bottom-24 w-full flex justify-center pointer-events-none">
               <button
                 onClick={handleGalaxyExplode}
                 className="pointer-events-auto px-8 py-3 bg-purple-600/80 hover:bg-purple-600 text-white rounded-full backdrop-blur-sm transition-all transform hover:scale-105 border border-purple-400/30 shadow-[0_0_20px_rgba(168,85,247,0.4)]"

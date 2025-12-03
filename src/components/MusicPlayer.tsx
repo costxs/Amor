@@ -54,10 +54,11 @@ const MusicPlayer: React.FC = () => {
         <div className="w-full max-w-md bg-zinc-900/80 backdrop-blur-md p-6 rounded-3xl border border-purple-500/30 shadow-[0_0_30px_rgba(168,85,247,0.15)]">
             <audio
                 ref={audioRef}
-                src="/music.mp3"
+                src={`${import.meta.env.BASE_URL}music.mp3`}
                 onTimeUpdate={handleTimeUpdate}
                 onEnded={() => setIsPlaying(false)}
                 loop
+                autoPlay
             />
 
             <div className="flex items-center gap-6">
