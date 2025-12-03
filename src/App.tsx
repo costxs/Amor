@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import DomeGallery from './components/DomeGallery';
 import Quiz from './components/Quiz';
 import MainContent from './components/MainContent';
+import kuromiImg from '/kuromi.png';
 
 type Stage = 'landing' | 'galaxy' | 'quiz' | 'main';
 
@@ -43,7 +44,7 @@ function App() {
               onClick={handleEnter}
               className="group relative px-8 py-4 bg-zinc-900 border-2 border-purple-400 rounded-full flex items-center gap-4 transition-all hover:scale-110 hover:shadow-[0_0_30px_rgba(192,132,252,0.6)]"
             >
-              <img src="/kuromi.png" alt="Kuromi" className="w-12 h-12 object-contain" />
+              <img src={kuromiImg} alt="Kuromi" className="w-12 h-12 object-contain" />
               <span className="text-xl font-bold text-purple-100">Clique aqui</span>
               <div className="absolute inset-0 rounded-full ring-2 ring-purple-500/50 animate-pulse" />
             </button>
