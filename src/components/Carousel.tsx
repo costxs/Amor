@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Images from public/carrosel
@@ -35,6 +35,13 @@ export function Carousel() {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 15000);
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   return (
     <div className="max-w-[600px] h-[350px] w-full m-auto py-8 px-4 relative group">
