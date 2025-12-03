@@ -30,9 +30,11 @@ const MainContent: React.FC = () => {
 
             {/* Final Message */}
             <div className="max-w-3xl w-full bg-gradient-to-br from-zinc-900 to-zinc-800 p-8 rounded-2xl border border-purple-500/30 shadow-xl text-left">
-                <h2 className="text-2xl font-bold text-purple-300 mb-6 text-center">Feliz mais um mês meu amor</h2>
-                <p className="text-gray-300 leading-relaxed text-lg">
-                    Eu não sei colocar em palavras em como te amo meu amor, minha garotinha que se tornou o meu bem mais precioso, você se tornou uma amiga, uma companheira, amiga e meu bem mais precioso, a que eu prometo cuidar por toda a eternidade, desculpa pelos meus estresses e ignorâncias que não percebo, acabei te fazendo chorar inúmeras vezes durante esses meses, espero que continue me amando da mesma forma de quando me conheceu, espero que sejamos muito felizes juntos, te amo minha infinita garotinha
+                <h2 className="text-2xl font-bold text-purple-300 mb-6 text-center">Feliz mais um mês para nós, meu amor!</h2>
+                <p className="text-gray-300 leading-relaxed text-lg whitespace-pre-line">
+                    É difícil encontrar palavras para explicar o tamanho do meu amor por você. De minha garotinha, você se transformou em tudo para mim: minha amiga, minha parceira e o tesouro que prometo proteger por toda a eternidade.
+                    {'\n\n'}
+                    Peço perdão pelas vezes em que o meu estresse falou mais alto e, sem perceber, acabei te magoando. Prometo me esforçar para trocar cada lágrima que causei por muitos sorrisos. Espero que o seu amor por mim continue firme e que possamos construir uma felicidade imensa lado a lado. Te amo demais, minha infinita garotinha.
                 </p>
             </div>
         </motion.div>
