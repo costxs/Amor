@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.....</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="landing-page">
+        <button id="enter-button">
+            <img src="kuromi.png" alt="Kuromi">
+            <span>Clique aqui</span>
+        </button>
+    </div>
+
+    <div id="flower-container" class="hidden">
+        <canvas id="galaxy-canvas"></canvas>
+    </div>
+
+    <div id="quiz-prompt" class="hidden modal-container">
+        <div class="modal-content">
+            <h2>Você quer participar de um quiz especial?</h2>
+            <div class="button-group">
+                <button id="start-quiz-btn">Sim!</button>
+                <button id="skip-quiz-btn">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-container" class="hidden modal-container">
+        <div class="modal-content">
+            <h2 id="question-text">Pergunta...</h2>
+            <div id="answer-buttons" class="button-group-vertical">
+                </div>
+        </div>
+    </div>
+
+    <div id="result-container" class="hidden modal-container">
+         <div class="modal-content">
+            <h2 id="result-message">Resultado...</h2>
+            <button id="continue-btn">Continuar</button>
+        </div>
+    </div>
+
+
+    <div id="main-content" class="hidden">
+        <div class="music-container">
+            <p>Uma música para nós:</p>
+            <audio controls>
+                <source src="musica.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="foto01.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="foto2.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="foto3.jpg">
+            </div>
+            <div class="slide fade">
+                <img src="foto4.jpg">
+            </div>
+        </div>
+
+        <div class="countdown-container">
+            <h2>Contando os dias para o seu momento especial...</h2>
+            <div id="timer">
+                <span id="days"></span> Dias e <span id="hours"></span> Horas
+            </div>
+        </div>
+
+        <div class="message-container">
+            <h2>Para você,:</h2>
+            <p>
+                Neste espaço, 
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
